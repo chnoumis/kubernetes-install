@@ -24,6 +24,5 @@ for SERVICES in kube-proxy kubelet docker flanneld; do
 done
 
 ip a | grep flannel | grep inet
-inet 172.17.45.0/16 scope global flannel0
 
 kubectl get nodes
